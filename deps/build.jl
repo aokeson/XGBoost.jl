@@ -21,7 +21,8 @@ provides(BuildProcess,
             @build_steps begin
                 ChangeDirectory(BinDeps.srcdir(xgboost))
                 `rm -rf xgboost`
-                `git clone https://github.com/aokeson/xgboost.git --recursive`
+                #`git clone https://github.com/aokeson/xgboost.git --recursive`
+                `git clone https://github.com/dmlc/xgboost.git --recursive`
             end
 
             @build_steps begin
